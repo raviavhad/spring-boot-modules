@@ -25,7 +25,6 @@ public class UserAccountService {
 
 	public String addUserAccount(UserAccount useraccount) {
 		
-		System.out.println("Hurry valid input");
 		Set<ConstraintViolation<UserAccount>> violations = validator.validate(useraccount);
 
 		if (!violations.isEmpty()) {
